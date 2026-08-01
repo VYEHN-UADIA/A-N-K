@@ -428,6 +428,15 @@ Si aucun objet ne l’occupe : ⊥
 Si plusieurs objets restent indiscernables selon les critères :
 ⊥ avec le statut contingent_frontier.
 
+Exemple humain / machine : 
+
+Un enfant ne peut connaitre le nom de sa mère ou de son père avant de l’avoir entendu au moins une fois de l’individu, et d’avoir lié ce attribut nominatif/nominal à l’identité de son possesseur véritable lors d’une conversation. 
+
+En effet : L’espace mathématique des rapports rationnels positifs est infini, et « l’apprentissage » est une séquence d’ajout de ces ratios attribués avec règles, mais l’état calculatoire actuel est fini ou limité par le nombre de ces liens.
+
+La formulation exacte serait :
+ANANKÉ recherche la relation suivante parmi les transformations encodées dans le référentiel actif, lequel est plongé dans un espace mathématique potentiellement infini de rapports rationnels positifs. 
+
 12. Isologie de Puissance
 Sur les dimensions relationnelles explicitement désignées, ANANKÉ peut également comparer les structures de puissance.
 Elle factorise les rapports rationnels en exposants premiers.
