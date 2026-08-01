@@ -1,0 +1,55 @@
+test_base_coordinates_are_measured_not_hashed (test_ananke_v3.AnankeV3Tests.test_base_coordinates_are_measured_not_hashed) ... ok
+test_contradictory_cycle_rolls_back (test_ananke_v3.AnankeV3Tests.test_contradictory_cycle_rolls_back) ... ok
+test_inference_is_physically_read_only (test_ananke_v3.AnankeV3Tests.test_inference_is_physically_read_only) ... ok
+test_relation_dimension_is_activated_as_relation (test_ananke_v3.AnankeV3Tests.test_relation_dimension_is_activated_as_relation) ... ok
+test_relational_induction_without_seen_target_line (test_ananke_v3.AnankeV3Tests.test_relational_induction_without_seen_target_line) ... ok
+test_rules_never_store_next_object_identity (test_ananke_v3.AnankeV3Tests.test_rules_never_store_next_object_identity) ... ok
+test_cell_closure_all_zero_when_true (test_closure.Closure.test_cell_closure_all_zero_when_true) ... ok
+test_cell_closure_detects_delta_falsification (test_closure.Closure.test_cell_closure_detects_delta_falsification) ... ok
+test_cell_closure_detects_ratio_only_falsification (test_closure.Closure.test_cell_closure_detects_ratio_only_falsification) ... ok
+test_composition_is_vector_not_blind_sum (test_closure.Closure.test_composition_is_vector_not_blind_sum) ... ok
+test_epsilon_measures_the_gap (test_closure.Closure.test_epsilon_measures_the_gap) ... ok
+test_residual_and_holds (test_closure.Closure.test_residual_and_holds) ... ok
+test_step_assertion_and_generation_guard (test_closure.Closure.test_step_assertion_and_generation_guard) ... ok
+test_truth_is_derived_never_stored (test_closure.Closure.test_truth_is_derived_never_stored) ... ok
+test_zero_is_allowed_here (test_closure.Closure.test_zero_is_allowed_here) ... ok
+test_delivered_state_covers_corpus (test_consolidation.Consolidation.test_delivered_state_covers_corpus) ... ok
+test_power_gating_switches_with_relations (test_consolidation.Consolidation.test_power_gating_switches_with_relations) ... ok
+test_power_hash_off_in_measured_regime (test_consolidation.Consolidation.test_power_hash_off_in_measured_regime) ... ok
+test_trajectory_is_order_sensitive (test_consolidation.Consolidation.test_trajectory_is_order_sensitive) ... ok
+test_frontend_targets_single_spin (test_distribution.DistributionTests.test_frontend_targets_single_spin) ... ok
+test_no_local_http_portal (test_distribution.DistributionTests.test_no_local_http_portal) ... ok
+test_no_server_or_service_directory (test_distribution.DistributionTests.test_no_server_or_service_directory) ... ok
+test_standalone_python_runtime (test_distribution.DistributionTests.test_standalone_python_runtime) ... ok
+test_associative_by_law (test_distributive.Distributive.test_associative_by_law) ... ok
+test_chain_two_path_consistency (test_distributive.Distributive.test_chain_two_path_consistency) ... ok
+test_close_coefficient_rational (test_distributive.Distributive.test_close_coefficient_rational) ... ok
+test_close_degree_unique_and_abstains (test_distributive.Distributive.test_close_degree_unique_and_abstains) ... ok
+test_close_step_exact_and_abstains (test_distributive.Distributive.test_close_step_exact_and_abstains) ... ok
+test_closure_delta_ratio_roundtrip (test_distributive.Distributive.test_closure_delta_ratio_roundtrip) ... ok
+test_coordinate_3_to_4_volume (test_distributive.Distributive.test_coordinate_3_to_4_volume) ... ok
+test_dormant_outside_linguistic_path (test_distributive.Distributive.test_dormant_outside_linguistic_path) ... ok
+test_expansion_sums_to_delta (test_distributive.Distributive.test_expansion_sums_to_delta) ... ok
+test_memory_cell_integrity (test_distributive.Distributive.test_memory_cell_integrity) ... ok
+test_pascal_rows (test_distributive.Distributive.test_pascal_rows) ... ok
+test_ratio_depends_on_degree (test_distributive.Distributive.test_ratio_depends_on_degree) ... ok
+test_recall_masked (test_distributive.Distributive.test_recall_masked) ... ok
+test_backward_reconstructs_previous_equation (test_three_body_dynamic_equations.ThreeBodyDynamicEquations.test_backward_reconstructs_previous_equation) ... ok
+test_equation_is_regenerated (test_three_body_dynamic_equations.ThreeBodyDynamicEquations.test_equation_is_regenerated) ... ok
+test_matches_discrete_reference (test_three_body_dynamic_equations.ThreeBodyDynamicEquations.test_matches_discrete_reference) ... ok
+test_random_equation_chains (test_three_body_dynamic_equations.ThreeBodyDynamicEquations.test_random_equation_chains) ... ok
+test_distributive_gravity_relation_closes (test_three_body_relational.ThreeBodyRelational.test_distributive_gravity_relation_closes) ... ok
+test_exact_round_trip (test_three_body_relational.ThreeBodyRelational.test_exact_round_trip) ... ok
+test_forward_and_backward_from_two_states_are_exact (test_three_body_relational.ThreeBodyRelational.test_forward_and_backward_from_two_states_are_exact) ... ok
+test_frame_is_exactly_reconstructible (test_three_body_relational.ThreeBodyRelational.test_frame_is_exactly_reconstructible) ... ok
+test_random_short_sequences (test_three_body_relational.ThreeBodyRelational.test_random_short_sequences) ... ok
+test_ratio_only_is_not_the_gravitational_law (test_three_body_relational.ThreeBodyRelational.test_ratio_only_is_not_the_gravitational_law) ... ok
+test_front_has_fixed_composer_and_delete_control (test_ui_and_input_v33.AnankeV33Tests.test_front_has_fixed_composer_and_delete_control) ... ok
+test_initial_lowercase_alias_is_declared (test_ui_and_input_v33.AnankeV33Tests.test_initial_lowercase_alias_is_declared) ... ok
+test_latest_user_message_is_active_line (test_ui_and_input_v33.AnankeV33Tests.test_latest_user_message_is_active_line) ... ok
+test_unknown_character_is_explained (test_ui_and_input_v33.AnankeV33Tests.test_unknown_character_is_explained) ... ok
+
+----------------------------------------------------------------------
+Ran 50 tests in 4.392s
+
+OK

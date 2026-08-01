@@ -1,0 +1,177 @@
+{
+  "experiment": "ANANKE dynamic equation three-body retest",
+  "principle": "E_n is regenerated at every state; no ratio is reused as E_(n+1)",
+  "seed": 271828,
+  "exact_discrete": {
+    "regime": "1D collinear, exact rational arithmetic, stable body order",
+    "trials": 500,
+    "future_steps_after_S1": 2,
+    "dynamic_equation_forward_exact": 500,
+    "dynamic_equation_backward_exact": 500,
+    "all_equation_closures_exact": 500,
+    "equation_to_equation_continuity_exact": 500,
+    "equation_transition_count": 500,
+    "equation_signature_changed": 500,
+    "frozen_equation_final_exact": 0,
+    "frozen_equation_mean_final_error": "~5.182744522268e-08 [bits=1077163/1077187]",
+    "frozen_equation_max_final_error": "~5.247827295574e-07 [bits=2143/2164]",
+    "example": {
+      "masses": [
+        "3/1",
+        "2/1",
+        "7/1"
+      ],
+      "G": "1/989",
+      "dt": "1/35",
+      "initial_velocities": [
+        "-1/27",
+        "3/107",
+        "-1/191"
+      ],
+      "states": [
+        [
+          "-39/1",
+          "-19/1",
+          "-7/1"
+        ],
+        [
+          "-65319446519819/1674812160000",
+          "-4433267660041/233339715000",
+          "-5971391231777/853037660160"
+        ],
+        [
+          "~-3.900211638258e+01 [bits=248/243]",
+          "~-1.899839779594e+01 [bits=248/243]",
+          "~-7.000299205029e+00 [bits=254/251]"
+        ],
+        [
+          "~-3.900317455922e+01 [bits=1689/1684]",
+          "~-1.899759664300e+01 [bits=1692/1687]",
+          "~-7.000448828370e+00 [bits=1703/1701]"
+        ]
+      ],
+      "equations": [
+        {
+          "observed_ratios": [
+            "716886242941829/716819604480000",
+            "15211299753371929/15212504939520000"
+          ],
+          "relative_accelerations": [
+            "~2.961131320237e-05 [bits=296/311]",
+            "~-5.858525733469e-05 [bits=297/311]"
+          ],
+          "generated_ratios": [
+            "~1.000092956629e+00 [bits=360/360]",
+            "~9.999207663516e-01 [bits=365/365]"
+          ],
+          "equation_changed": true,
+          "closure": true
+        },
+        {
+          "observed_ratios": [
+            "~1.000092956629e+00 [bits=360/360]",
+            "~9.999207663516e-01 [bits=365/365]"
+          ],
+          "relative_accelerations": [
+            "~2.962184576452e-05 [bits=2154/2169]",
+            "~-5.859651568115e-05 [bits=2154/2169]"
+          ],
+          "generated_ratios": [
+            "~1.000092949197e+00 [bits=2528/2528]",
+            "~9.999207560864e-01 [bits=2533/2533]"
+          ],
+          "equation_changed": true,
+          "closure": true
+        }
+      ],
+      "dynamic_final": [
+        "~-3.900317455922e+01 [bits=1689/1684]",
+        "~-1.899759664300e+01 [bits=1692/1687]",
+        "~-7.000448828370e+00 [bits=1703/1701]"
+      ],
+      "frozen_final": [
+        "~-3.900317474255e+01 [bits=781/776]",
+        "~-1.899759667768e+01 [bits=774/770]",
+        "~-7.000448739889e+00 [bits=774/771]"
+      ],
+      "frozen_final_error": "~1.833356657740e-07 [bits=2197/2219]",
+      "forward_exact": true,
+      "backward_exact": true
+    }
+  },
+  "continuous_reference": {
+    "regime": "continuous 1D Newtonian reference",
+    "reference": "Decimal RK4, 120 substeps per dt",
+    "trials_per_dt": 30,
+    "future_steps_after_observed_S1": 2,
+    "results": {
+      "dt=1/20": {
+        "accepted": 30,
+        "final_horizon": "3*dt from S0",
+        "errors": {
+          "dynamic_forward": {
+            "mean": "4.771067852134E-15",
+            "median": "2.015104086503E-15",
+            "max": "2.963239192259E-14"
+          },
+          "frozen_forward": {
+            "mean": "3.914674868279E-7",
+            "median": "3.307178583397E-7",
+            "max": "1.138771317050E-6"
+          },
+          "dynamic_backward": {
+            "mean": "1.590773899552E-15",
+            "median": "6.712988199810E-16",
+            "max": "9.895989954896E-15"
+          }
+        },
+        "mean_gain_dynamic_vs_frozen": "8.205029E+7"
+      },
+      "dt=1/40": {
+        "accepted": 30,
+        "final_horizon": "3*dt from S0",
+        "errors": {
+          "dynamic_forward": {
+            "mean": "2.889098270990E-16",
+            "median": "1.256437198963E-16",
+            "max": "1.705021449581E-15"
+          },
+          "frozen_forward": {
+            "mean": "1.012390779606E-7",
+            "median": "8.317503733615E-8",
+            "max": "3.880697852233E-7"
+          },
+          "dynamic_backward": {
+            "mean": "9.631728657551E-17",
+            "median": "4.190116891304E-17",
+            "max": "5.678390451994E-16"
+          }
+        },
+        "mean_gain_dynamic_vs_frozen": "3.504176E+8"
+      },
+      "dt=1/80": {
+        "accepted": 30,
+        "final_horizon": "3*dt from S0",
+        "errors": {
+          "dynamic_forward": {
+            "mean": "1.439202250541E-17",
+            "median": "8.263408365468E-18",
+            "max": "1.091266034962E-16"
+          },
+          "frozen_forward": {
+            "mean": "2.156876171315E-8",
+            "median": "1.944892593433E-8",
+            "max": "8.693659284963E-8"
+          },
+          "dynamic_backward": {
+            "mean": "4.796758223841E-18",
+            "median": "2.753792048206E-18",
+            "max": "3.636058796052E-17"
+          }
+        },
+        "mean_gain_dynamic_vs_frozen": "1.498661E+9"
+      }
+    }
+  },
+  "interpretation_guard": "This tests equation regeneration from two observed states plus masses, G and dt. It does not infer Newton's law from a single transition."
+}

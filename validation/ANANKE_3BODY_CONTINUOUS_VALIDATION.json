@@ -1,0 +1,89 @@
+{
+  "experiment": "ANANKE three-body continuous-reference validation",
+  "reference": "Decimal RK4, 160 substeps per observed interval",
+  "seed": 161803,
+  "trials_per_dt": 40,
+  "results": {
+    "dt=1/10": {
+      "accepted": 40,
+      "metrics_max_position_error": {
+        "physics_forward": {
+          "mean": "3.666741512674E-11",
+          "median": "2.107422913694E-11",
+          "max": "1.858461616215E-10"
+        },
+        "physics_backward": {
+          "mean": "3.674473392585E-11",
+          "median": "2.122672226646E-11",
+          "max": "1.890125669995E-10"
+        },
+        "ratio_forward": {
+          "mean": "3.034091135830E-5",
+          "median": "2.669450323809E-5",
+          "max": "7.451354781972E-5"
+        },
+        "ratio_backward": {
+          "mean": "3.034494217810E-5",
+          "median": "2.666515056901E-5",
+          "max": "7.462953840140E-5"
+        }
+      },
+      "physics_vs_ratio_mean_gain_forward": "8.274625E+5",
+      "physics_vs_ratio_mean_gain_backward": "8.258310E+5"
+    },
+    "dt=1/20": {
+      "accepted": 40,
+      "metrics_max_position_error": {
+        "physics_forward": {
+          "mean": "2.716422702727E-12",
+          "median": "1.555941949593E-12",
+          "max": "2.099903719728E-11"
+        },
+        "physics_backward": {
+          "mean": "2.724142275390E-12",
+          "median": "1.560307902203E-12",
+          "max": "2.119347534542E-11"
+        },
+        "ratio_forward": {
+          "mean": "8.621896675344E-6",
+          "median": "7.164596873796E-6",
+          "max": "1.790502330801E-5"
+        },
+        "ratio_backward": {
+          "mean": "8.624239456053E-6",
+          "median": "7.163968389010E-6",
+          "max": "1.793502881376E-5"
+        }
+      },
+      "physics_vs_ratio_mean_gain_forward": "3.173989E+6",
+      "physics_vs_ratio_mean_gain_backward": "3.165855E+6"
+    },
+    "dt=1/40": {
+      "accepted": 40,
+      "metrics_max_position_error": {
+        "physics_forward": {
+          "mean": "2.320385823003E-13",
+          "median": "6.861719134173E-14",
+          "max": "2.361678437723E-12"
+        },
+        "physics_backward": {
+          "mean": "2.321388795143E-13",
+          "median": "6.848667544671E-14",
+          "max": "2.374112822972E-12"
+        },
+        "ratio_forward": {
+          "mean": "1.966602099670E-6",
+          "median": "1.622332688805E-6",
+          "max": "7.868590650751E-6"
+        },
+        "ratio_backward": {
+          "mean": "1.966739530291E-6",
+          "median": "1.622376405042E-6",
+          "max": "7.874135883050E-6"
+        }
+      },
+      "physics_vs_ratio_mean_gain_forward": "8.475324E+6",
+      "physics_vs_ratio_mean_gain_backward": "8.472254E+6"
+    }
+  }
+}

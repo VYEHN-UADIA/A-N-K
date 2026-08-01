@@ -1,0 +1,11 @@
+integrity: ok
+version: 1
+lines: 1
+objects: 28
+coordinates: 420
+dimensions: 16
+neighbor_observations: 83
+relation_rules: 929
+relations: 0
+journal: 1
+relation_rule_support: 1091
