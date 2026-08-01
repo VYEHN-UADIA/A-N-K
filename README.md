@@ -29,21 +29,70 @@ Multiplication = nouvelles relations par ratios et coefficients logique (Math + 
 
 Mathématiques
 
-xn(x+h)n =(1+xh )n=k=0∑n (kn )(xh )k,
 
-et sa version multidimensionnelle
+La formule distributive du système d’ANANKÉ
 
-VV′ =∏i (1+xi hi ). 
+Les formules telles qu’elles sont lors d’erreurs communes (développements multiplicatifs additifs et/ou logarithmiques) est littéralement fausse ou rendue illisible :
+
+xn(x+h)n=(1+xh)n=⋯
+
+et
+
+VV′=i∏ (1+xi hi )
+
+
+
+Les formules exactes sont :
+
+ρn (x,h) = 
+(x+h)n / x exposant n =
+(1+h/x) exposant n =
+n ∑ k=0 (n k)(h/x) exposant k
+
+avec les conditions utilisées par ANANKÉ :
+x>0, x+h>0, n∈N, n≥1
+
+La variation additive absolue est :
+Δn (x,h) = 
+(x+h) exposant n − x exposant n =
+n ∑ k = 1 (n k) x exposant - k * h exposant k
+
+Le rapport et la variation sont reliés exactement par :
+ρn = 1+Δ exposant n / x exposant n
+
+et réciproquement :
+Δn =x exposant n (ρn −1)
+
+C’est cela qui est rigoureusement vrai, sans approximation.
+
+
+Version multidimensionnelle correcte
+
+Si :
+
+V=i∏ xi
+
+et :
+
+V′=∏i (xi +hi )
+
+alors :
+
+V/V′ = ∏i (1 + hi / xi) 
 
 C'est rigoureusement vrai, sans aucune approximation.
+
+ET
 
 La coordonnée fondamentale dans un référentiel est un rapport
 μ=C(ak )/C(ak−1 ), 
 
-et ces trois notes donnent enfin cette réponse : 
-*comment un pas additif se traduit en rapport multiplicatif exact* — via le développement binomial. 
 
-Le lien cherché entre la ligne additive du corpus et le référentiel multiplicatif d'ANANKÉ est une vérité.
+Et ces équation conclues sur cette affirmation : 
+
+Comment un pas additif se traduit en rapport multiplicatif exact ? — via le développement binomial. 
+
+Le lien cherché entre la ligne additive du corpus (input/output/données) et le référentiel multiplicatif d'ANANKÉ est une vérité mathématique.
 
 
 
