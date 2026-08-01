@@ -1,4 +1,4 @@
-# ANANKÉ v3 — installation directe PHP → Python
+# ANANKÉ v3 — installation directe PHP → Python et HTML
 
 ## Distribution
 
@@ -13,34 +13,38 @@
   state/
 ```
 
-ANANKÉ ne nécessite aucun portail, service HTTP local ou port dédié. Le message `Failed to connect to 127.0.0.1 port 7138` provenait de l'ancienne architecture proxy. Cette dépendance a été supprimée.
+ANANKÉ ne nécessite aucun portail, service HTTP local ou port dédié. Les messages types `Failed to connect to 127.0.0.1 port 7139` provenait d'ancienne architecture "proxy". Cette dépendance a été supprimée.
+
+Le directory nommé assets contient un fichier déja intégré, cette fonctionnalité app.js devient modulaire ou obsolète selon plateforme de conversation.
+
 
 ## Prérequis
 
 - PHP 8.2 ou 8.3 avec `proc_open` autorisé ;
-- Python 3.10+ détecté automatiquement (`/usr/bin`, `/usr/local/bin`, `/bin`, distributions Plesk), avec `ANANKE_PYTHON_BIN` prioritaire si défini ;
-- extension Python SQLite standard ;
-- `oracle_connect.php` dans le dossier `/html`, exposant `$conn` en `mysqli` ;
-- colonne `users.ananke_access` valant `granted` ou `denied`.
+- Python 3.10+ détecté automatiquement (`/usr/bin`, `/usr/local/bin`, `/bin`, seulement distributions Plesk), avec `ANANKE_PYTHON_BIN` prioritaire si défini ;
+- extension Python SQLite standard déja défini ;
+- fichier de type `oracle_connect.php` avec credent (connexion base de donnée) dans le dossier `/html`, exposant `$conn` en `mysqli` ;
+- colonne à ajouté (Mysql) `users.ananke_access` valant `granted` ou `denied`.
+
 
 ## Première initialisation
 
 ```bash
-cd /var/www/vhosts/uadia.fr/cercle.uadia.fr/main/src/html/AnankeAI
+cd /votre distribution NGINX/html/AnankeAI
 export PYTHONPATH="$PWD"
 python3 -m ananke_core --state state/ananke.sqlite3 train corpus/bootstrap_fr.txt --objective general
 ```
 
-La distribution fournie contient déjà un état initial entraîné afin de permettre la première conversation.
+La distribution fournie contient déjà un état initial entraîné afin de faciliter la première conversation (juvénile).
 
-## Inférence locale
+## Inférence locale (Si terminal)
 
 ```bash
 printf '%s' '{"action":"infer","prompt":"Je suis ","objective":"general","max_characters":120}' \
   | PYTHONPATH=. python3 Ananke_runtime.py --state state/ananke.sqlite3
 ```
 
-## Ajout d'une loi
+## Ajout d'une loi (Se référer au document explicatif apprentissage)
 
 ```bash
 python3 -m ananke_core --state state/ananke.sqlite3 relation \
@@ -58,7 +62,9 @@ La dimension est enregistrée avec `kind='relation'`, ce qui corrige le défaut 
 5. réconciliation transactionnelle complète de l'objectif ;
 6. création d'une nouvelle version.
 
-La version actuelle annonce honnêtement une réconciliation complète de l'objectif. Elle ne prétend pas encore réaliser une mise à jour incrémentale.
+La version actuelle annonce une réconciliation entière de l'objectif : Elle ne prétend pas encore réaliser une mise à jour incrémentale vers une version AI entière. Les suites viendront.
+
+
 
 ## Exécution PHP
 
@@ -67,6 +73,9 @@ Le client appelle seulement :
 ```text
 ./AnankeAI/Ananke_spin.php
 ```
+
+Cette séquence sert de vérification utilisateur et peux être supprimée (pas de validation, pas de session utilisateur php, pas de connexion par credent à une base de donnée possible)
+
 
 Le PHP lance un script Python autonome, selon le même contrat que les workers Python déjà utilisés dans l’écosystème Cercle :
 
@@ -80,8 +89,8 @@ L’interpréteur peut être remplacé par `ANANKE_PYTHON_BIN`; sa valeur par d�
 
 ## Sécurité
 
-- session Cercle vérifiée par `oracle_connect.php` ;
-- contrôle `users.ananke_access='granted'` ;
+- session Utilisateur vérifiée par `oracle_connect.php` ;
+- contrôle Mysql `users.ananke_access='granted'` ;
 - requête préparée `mysqli` ;
 - CSRF obligatoire ;
 - inférence SQLite en lecture seule ;
