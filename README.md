@@ -18,12 +18,13 @@ Noyau d’induction relationnelle déterministe
 Référentiel - lieu et objet mathématique stable et infini
 
 ANANKÉ ne prédit pas l’identité du prochain objet ; elle prédit la transformation relationnelle suivante selon les millions de transformations relationnelles possibles, puis cherche quel objet occupe la position obtenue.
-Et des millions de modules y sont connectables.
 
 Relation = connexion = humain (representative)
-0 = annihilateur car 1*0=0 (Maths)
+0 = anihilateur car 1*0=0 (Maths)
 1 = existence = relation car 1*1=1 et 1*2 = 2 -> +1 (Maths)
 Multiplication = nouvelles relations par ratios et coefficients logique (Math + representative)
+
+
 
 
 Mathématiques
@@ -378,7 +379,7 @@ Si aucun objet ne l’occupe : ⊥
 Si plusieurs objets restent indiscernables selon les critères :
 ⊥ avec le statut contingent_frontier.
 
-12. Puissance
+12. Isologie de Puissance
 Sur les dimensions relationnelles explicitement désignées, ANANKÉ peut également comparer les structures de puissance.
 Elle factorise les rapports rationnels en exposants premiers.
 
@@ -396,5 +397,160 @@ sans calculer :
 * exponentielle ; 
 * approximation flottante. 
 
-Ce mécanisme n’est volontairement pas appliqué automatiquement aux coordonnées mesurées des corpus, car des fréquences présentant accidentellement la même structure de puissance ne constituent pas nécessairement une loi et reste une variation.
+Ce mécanisme n’est volontairement pas appliqué automatiquement aux coordonnées mesurées du corpus, car des fréquences présentant accidentellement la même structure de puissance ne constituent pas nécessairement une loi.
+
+L’architecture possède également un second niveau d’induction.
+
+Supposons que la trajectoire apprise soit :
+a→b=×2
+
+suivie de :
+b→x=×3
+
+Et que la trajectoire interrogée soit :
+c→d=×4=22
+
+ANANKÉ recherche un facteur de puissance commun :
+λ=2
+
+Elle transforme alors la relation suivante :
+3λ=32=9
+
+et résout :
+d→y=×9
+
+
+
+
+
+
+
+
+Ce que l’IA apprend — et ce qu’elle n’apprend pas aujourd’hui : elle lis des trajectoires, mais ne découvre pas encore les mystères de ses logiques et lois
+
+L’apprentissage actuel depuis un texte :
+1. crée les objets caractères ; 
+2. compte leurs occurrences et leurs environnements ; 
+3. reconstruit leurs coordonnées mesurées ; 
+4. transforme les séquences en trajectoires de rapports ; 
+5. enregistre les relations suivantes observées. 
+En revanche, ANANKÉ ne découvre pas automatiquement :
+* que je est un pronom ; 
+* que suis est une conjugaison ; 
+* que chat et chien sont des animaux ; 
+* qu’une relation grammaticale ou causale existe ; 
+* quelle dimension relationnelle devrait être créée ; 
+* quel facteur devrait relier deux concepts. 
+Les dimensions relationnelles véritablement puissantes doivent actuellement être déclarées explicitement sous la forme :
+
+{
+  "source": "...",
+  "target": "...",
+  "dimension": "...",
+  "factor": "...",
+  "logic": "..."
+}
+
+Ainsi, le moteur sait très bien exploiter une loi relationnelle, mais il ne sait pas encore la découvrir à partir du corpus brut.
+C’est la frontière principale entre le prototype actuel et une intelligence relationnelle autonome.
+
+
+
+La mémoire réelle d’ANANKÉ :
+la mémoire cognitive actuellement active est SQLite
+
+La mémoire utilisée par l’IA se trouve dans :
+* objects : identités ; 
+* dimensions : axes logiques ; 
+* coordinates : positions ; 
+* relations : lois explicites ; 
+* relation_rules : trajectoires et transformations suivantes ; 
+* lines : corpus ; 
+* neighbor_observations : voisinages ; 
+* journal : versions et opérations. 
+Cette mémoire possède de bonnes propriétés :
+* persistante ; 
+* inspectable ; 
+* déterministe ; 
+* versionnée ; 
+* transactionnelle ; 
+* réversible en cas de contradiction ; 
+* physiquement en lecture seule pendant l’inférence. 
+
+
+
+La MemoryCell distributive n’est pas intégrée à l’IA linguistique
+
+Le module distributive.py définit effectivement une cellule reconstructible :
+M=(identity,x,h,n,Δ,ρ,prev,next)
+avec plusieurs fermetures exactes.
+Mais cette cellule est explicitement dormante hors du chemin linguistique. Le moteur principal :
+
+engine → inference → store
+engine → trainer → store
+
+n’appelle pas la mémoire distributive.
+Elle est actuellement employée par les expérimentations quantitatives et le solveur scientifique, pas par la génération linguistique.
+
+Il faut donc distinguer :
+* mémoire relationnelle persistante actuelle de l’IA : coordonnées et règles SQLite ; 
+* primitive de mémoire distributive reconstructible : bibliothèque mathématique disponible, mais non connectée au fonctionnement cognitif.
+
+
+
+Une absence importante : la mémoire conversationnelle
+
+Le runtime ne transmet pas réellement l’historique d’une conversation au moteur.
+Lorsqu’il reçoit une liste de messages, il recherche le dernier message utilisateur et ignore les précédents. Les anciennes réponses d’ANANKÉ et les anciennes interventions de l’utilisateur ne participent donc pas à l’inférence suivante.
+
+Ainsi, ANANKÉ possède :
+* une mémoire d’apprentissage persistante ; 
+* aucune mémoire conversationnelle multi-tour opérationnelle ; 
+* aucun état de travail évolutif pendant la conversation ; 
+* aucun apprentissage automatique pendant l’inférence. 
+
+Elle est actuellement une génératrice appelée séparément pour chaque message, pas encore une agente conversationnelle continue.
+
+
+
+
+Les qualités architecturales d’ANANKÉ AI
+
+Une abstention native
+ANANKÉ ne force pas toujours une sortie.
+Elle retourne ⊥ en cas :
+
+* d’objet inconnu ; 
+* de trajectoire non reconnue ; 
+* de position cible inoccupée ; 
+* d’égalité entre les meilleurs candidats. 
+
+C’est une qualité importante : l’incertitude n’est pas dissimulée par un échantillonnage verbal plausible, c’est un paramètre mathématique logique lié au système de résultat d’ANANKÉ.
+
+Le système possède donc dans sa manière de produire un résultat, une logique d’abstention. 
+Ce n’est pas Oui/Non, c’est le résultat ⊥ traduit par représentation : « Je m’abstients ». 
+
+
+Une traçabilité complète
+Chaque décision peut exposer :
+* la profondeur du contexte reconnu ; 
+* les dimensions utilisées ; 
+* le mode exact ou puissance ; 
+* le support ; 
+* les objets résolus ; 
+* la frontière des candidats. 
+Il est donc possible d’expliquer pourquoi un caractère a été produit.
+
+Une arithmétique exacte
+Les rapports sont des Fraction rationnelles. L’isologie de puissance travaille sur les exposants premiers.
+Cela donne :
+* aucune dérive flottante ; 
+* aucune approximation silencieuse ; 
+* une contradiction précisément détectable ; 
+* une reproductibilité complète. 
+
+
+Une séparation correcte entre identité et position
+
+Deux objets ne peuvent avoir la même position dans ce référentiel, mais deux objets peuvent aussi avoir la même position sans être fusionnés. Cette arithmétique conceptuelle en dehors du système logique absolutiste peut être source de nouveaux prototypes, leur identité mémoire SQLite reste distincte : c’est conceptuellement exempt d’erreur : une collision de coordonnées devient une ambiguïté épistémique, pas une destruction d’identité.
 
