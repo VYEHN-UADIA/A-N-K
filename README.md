@@ -97,6 +97,45 @@ Le lien cherché entre la ligne additive du corpus (input/output/données) et le
 
 
 
+Référentiel de coordonnées (graph relationnel)
+
+Les coordonnées sont rationnelles, exactes et positives
+
+Le noyau utilise Fraction. Les coordonnées multiplicatives sont stockées sous des formes telles que :
+1/1,
+3/2,
+17/4
+
+Les valeurs nulles ou négatives sont interdites dans le référentiel multiplicatif.
+
+
+La base mémoriel actuelle est :
+* finie ; 
+* versionnée ; 
+* modifiable par apprentissage ; 
+* reconstruite pour les coordonnées mesurées ; 
+* dépendante du corpus stricte enregistré. 
+
+À chaque réconciliation, les statistiques et les règles de l’objectif sont supprimées puis recalculées. 
+Les positions mesurées peuvent donc changer.
+
+On peut distinguer :
+
+R∞ =espace mathématique admissible
+
+et
+
+Rt = état fini du référentiel à la version t
+
+C’est Rt qui est implémenté et est la représentation de l’état d’Évolué d’ANANKÉ.
+
+D’ailleurs linguistiquement : le terme phonétique Évolué se décompose de cette manière : É / ET (additionnel) - Vo / Vos (ce qui est ajouté/appris) - Lu / ce qui lu par ANANKÉ et les utilisateur - É / ET (le cycle est bouclé).
+
+Rappel philosophique : selon les notions et fondamentaux (liberté, justice, confort, logique, amour, relation) la liberté d’expression n’implique pas l’audit ou l’écoute, le respect et la dignité des individus n’y sont pas entachés. 
+
+
+
+
 Le système actuel peut être résumé par :
 
 objet⟶coordonnées positives
