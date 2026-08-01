@@ -1,0 +1,21 @@
+ANANKÉ v3.2 — runtime autonome compatible Cercle
+
+Architecture d'exécution :
+Ananke.html -> Ananke_spin.php -> proc_open -> python3 Ananke_runtime.py -> SQLite -> JSON
+
+Contrat Python :
+- shebang /usr/bin/env python3 ;
+- fichier autonome placé dans AnankeAI/ ;
+- arguments argparse ;
+- JSON stdin/stdout ;
+- aucun port local ;
+- aucun lancement python -m ;
+- journal Python : state/ananke_python.log ;
+- journal PHP : state/ananke_runtime.log.
+
+Validation :
+- php -l Ananke_spin.php : valide ;
+- python3 -m py_compile Ananke_runtime.py : valide ;
+- ./Ananke_runtime.py --state state/ananke.sqlite3 : valide ;
+- proc_open PHP -> Ananke_runtime.py -> stats : valide ;
+- tests unitaires et distribution : 10/10 réussis.

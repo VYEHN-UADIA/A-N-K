@@ -1,0 +1,16 @@
+ANANKÉ v3.2 — runtime Python autonome
+
+Contrat retenu :
+- fichier racine Ananke_runtime.py avec shebang python3 ;
+- lancement direct : python3 Ananke_runtime.py --state ... ;
+- requête JSON sur stdin ;
+- réponse JSON unique sur stdout ;
+- diagnostics dans state/ananke_python.log et stderr ;
+- aucun python -m, aucun port, aucun démon local.
+
+Validation :
+- syntaxe PHP : valide ;
+- compilation Python : valide ;
+- exécution directe Python -> stats : code 0 ;
+- proc_open PHP -> script Python -> SQLite -> JSON : code 0 ;
+- tests ANANKÉ : 10/10 réussis.

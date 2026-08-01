@@ -1,0 +1,8 @@
+
+--- exemples runtime ---
+INPUT=hey
+{"output":"","objective":"general","characters":0,"decisions":1,"abstained":true,"generator":"relation-to-position-to-character","stop_reason":"unknown_object","unknown_object":"h","version":1,"model":"ANANKÉ · génératrice relationnelle v3.3"}
+INPUT=je
+{"output":" suis là. Tu es là. Il e","objective":"general","characters":24,"decisions":24,"abstained":false,"generator":"relation-to-position-to-character","stop_reason":"completed","normalizations":[{"index":0,"from":"j","to":"J"}],"version":1,"model":"ANANKÉ · génératrice relationnelle v3.3"}
+INPUT=je suis
+{"output":" là. Tu es là. Il est là","objective":"general","characters":24,"decisions":24,"abstained":false,"generator":"relation-to-position-to-character","stop_reason":"completed","normalizations":[{"index":0,"from":"j","to":"J"}],"version":1,"model":"ANANKÉ · génératrice relationnelle v3.3"}

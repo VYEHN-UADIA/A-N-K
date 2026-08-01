@@ -1,0 +1,41 @@
+ANANKÉ v3 — validation
+Date: 2026-07-30
+
+test_base_coordinates_are_measured_not_hashed (test_ananke_v3.AnankeV3Tests.test_base_coordinates_are_measured_not_hashed) ... ok
+test_contradictory_cycle_rolls_back (test_ananke_v3.AnankeV3Tests.test_contradictory_cycle_rolls_back) ... ok
+test_inference_is_physically_read_only (test_ananke_v3.AnankeV3Tests.test_inference_is_physically_read_only) ... ok
+test_relation_dimension_is_activated_as_relation (test_ananke_v3.AnankeV3Tests.test_relation_dimension_is_activated_as_relation) ... ok
+test_relational_induction_without_seen_target_line (test_ananke_v3.AnankeV3Tests.test_relational_induction_without_seen_target_line) ... ok
+test_rules_never_store_next_object_identity (test_ananke_v3.AnankeV3Tests.test_rules_never_store_next_object_identity) ... ok
+test_frontend_targets_single_spin (test_distribution.DistributionTests.test_frontend_targets_single_spin) ... ok
+test_no_local_http_portal (test_distribution.DistributionTests.test_no_local_http_portal) ... ok
+test_no_server_or_service_directory (test_distribution.DistributionTests.test_no_server_or_service_directory) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.718s
+
+OK
+
+No syntax errors detected in Ananke_spin.php
+No syntax errors detected in private/Ananke_access.php
+JavaScript: syntaxe valide
+
+Dépendance HTTP locale:
+- aucun appel 127.0.0.1
+- aucun port 7138
+- aucun curl proxy
+- aucun server.py
+- aucun dossier service
+
+Inférence initiale directe Python/stdin/stdout:
+{"output":"là. Tu es là. Il est là. Nous sommes là.\n","objective":"general","characters":41,"decisions":41,"abstained":false,"generator":"relation-to-position-to-character","version":1,"model":"ANANKÉ · génératrice relationnelle v3"}
+
+Contrats vérifiés:
+- inférence SQLite physiquement en lecture seule
+- caractère inconnu non inscrit pendant l'inférence
+- table relation_rules sans next_object_id
+- x/y/z mesurés depuis le corpus, non issus d'un hash
+- dimension manuelle correctement typée relation
+- rollback d'un cycle contradictoire
+- induction relationnelle cd→y alors que seule la ligne abx a été apprise
+- aucune utilisation de log, exp, softmax, sigmoid ou matmul dans le noyau
