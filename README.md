@@ -2,11 +2,28 @@
 
 ANANKÉ AI
 
+
+Créateur : VYEHN - UADIA, Paris (2026) - EUROPE
+tous droits réservés
+
+
 l'IA au référentiel multiplicatif "absolu"
 
 ANANKÉ-Ἀνάγκη : L’absolutivisme - le Destin
-"Selon question de la firmation qui nait du su savoir et de la connaissance que rien ne saurait en être autrement. :)"
+"Selon la question de la firmation qui nait du savoir, et de la connaissance, que rien ne saurait en être autrement. :)"
 
+
+Concept :
+Noyau d’induction relationnelle déterministe
+Référentiel - lieu et objet mathématique stable et infini
+
+ANANKÉ ne prédit pas l’identité du prochain objet ; elle prédit la transformation relationnelle suivante selon les millions de transformations relationnelles possibles, puis cherche quel objet occupe la position obtenue.
+Et des millions de modules y sont connectables.
+
+Relation = connexion = humain (representative)
+0 = annihilateur car 1*0=0 (Maths)
+1 = existence = relation car 1*1=1 et 1*2 = 2 -> +1 (Maths)
+Multiplication = nouvelles relations par ratios et coefficients logique (Math + representative)
 
 
 Mathématiques
