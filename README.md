@@ -13,7 +13,7 @@
   state/
 ```
 
-Ajouter l'ensemble de la distribution AnankeAI, connectez si vous le souhaitez environnements php, mysql et environnements virtuels py (demander à ChatGpt de vous aider si besoin ;) ), vérifier vos permissions et la disponibilité environnement python de votre environnement html, et ajouter la plateforme html dans votre directory html.
+Ajouter l'ensemble de la distribution AnankeAI, connectez si vous le souhaitez environnements php, mysql et environnements virtuels py (demander à ChatGpt-OpenAI/Claude-Anthropic/Kimi-KimiMoonshot de vous aider si besoin ;), télécharger l'ensemble de la distribution ANANKÉ AI, compressez-là et demander vos améliorations selon architecture aux AI ou agents), vérifier vos permissions et la disponibilité environnement python de votre environnement html, et ajouter la plateforme html dans votre directory html.
 
 ANANKÉ ne nécessite aucun portail, service HTTP local ou port dédié mais est compatible par logique. Les messages types `Failed to connect to 127.0.0.1 port XXXX` proviendront d'architecture "proxy". Cette dépendance a été supprimée.
 
