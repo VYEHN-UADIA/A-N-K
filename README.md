@@ -13,9 +13,15 @@
   state/
 ```
 
-ANANKÉ ne nécessite aucun portail, service HTTP local ou port dédié. Les messages types `Failed to connect to 127.0.0.1 port 7139` provenait d'ancienne architecture "proxy". Cette dépendance a été supprimée.
+Ajouter l'ensemble de la distribution AnankeAI, connectez si vous le souhaitez environnements php, mysql et environnements virtuels py (demander à ChatGpt de vous aider si besoin ;) ), vérifier vos permissions et la disponibilité environnement python de votre environnement html, et ajouter la plateforme html dans votre directory html.
 
-Le directory nommé assets contient un fichier déja intégré, cette fonctionnalité app.js devient modulaire ou obsolète selon plateforme de conversation.
+ANANKÉ ne nécessite aucun portail, service HTTP local ou port dédié mais est compatible par logique. Les messages types `Failed to connect to 127.0.0.1 port XXXX` proviendront d'architecture "proxy". Cette dépendance a été supprimée.
+
+Le directory nommé assets contient un fichier déja intégré, cette fonctionnalité app.js devient modulaire ou obsolète selon plateforme de conversation html.
+
+ANANKÉ AI n'as pas d'API / provider (2026)
+
+ANANKÉ est un algorithme, mais sa faculté système basé sur un référentiel mathématique multiplicatif en comparaison de modules équationnels en fait de cet algorithme un "cerveau" de calcul dont la matière est faite de coordonnées mathématiques.
 
 
 ## Prérequis
